@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vocal Warm-up Helper</title>
+    <style>
+      .controls {
+        margin: 20px;
+      }
+      button,
+      select {
+        margin: 6px;
+        padding: 8px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="controls">
+      <select id="rootNoteSelect">
+        <option value="C">C</option>
+        <option value="C#">C#/D♭</option>
+        <option value="D">D</option>
+        <option value="D#">D#/E♭</option>
+        <option value="E">E</option>
+        <option value="F">F</option>
+        <option value="F#">F#/G♭</option>
+        <option value="G">G</option>
+        <option value="G#">G#/A♭</option>
+        <option value="A">A</option>
+        <option value="A#">A#/B♭</option>
+        <option value="B">B</option>
+      </select>
+      <select id="scaleSelect">
+        <option value="major">Major Scale</option>
+        <option value="minor">Minor Scale</option>
+        <option value="chromatic">Chromatic Scale</option>
+      </select>
+
+      <select id="patternSelect">
+        <option value="ascending">Ascending</option>
+        <option value="descending">Descending</option>
+        <option value="ascendingDescending">Ascending-Descending</option>
+        <option value="broken">Broken Pattern (1-2-1-3-1-4...)</option>
+      </select>
+
+      <button id="transposeDown">♭</button>
+      <button id="transposeUp">♯</button>
+      <button id="playPause">Play</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
